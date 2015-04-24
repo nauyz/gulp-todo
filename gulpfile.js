@@ -6,7 +6,7 @@ var gulp        = require('gulp'),
     webserver   = require('gulp-webserver');
     opn         = require('opn');
 
-var DOMAIN = 'localhost',
+var DOMAIN = '192.168.2.17',
     PORT = 8888;
 
 var paths = {

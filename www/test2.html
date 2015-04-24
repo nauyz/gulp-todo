@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+    <head>
+        <style type="text/css">
+          html,body{
+            height: 100%;
+            width:  100%;
+            margin:   0;
+            background: #ccc;
+          }
+          .nav {
+            font-size: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+          }
+          .nav-list {
+            text-align: center;
+            font-size: 1rem;
+            position: absolute;
+            width: 33.33%;
+          }
+
+          @-webkit-keyframes move-left {
+            0% {
+              -webkit-transform: translateX(0);
+            }
+            16.67% {
+              -webkit-transform: translateX(-100%);
+            }
+            33.33% {
+              -webkit-transform: translateX(-100%);
+
+            }
+            50% {
+              -webkit-transform: translateX(-200%);
+            }
+            66.66% {
+              -webkit-transform: translateX(-200%);
+
+            }
+            83.33% {
+              -webkit-transform: translateX(-300%);
+            }
+            100% {
+              -webkit-transform: translateX(-300%);
+            }
+          }
+          
+          @-webkit-keyframes show-display {
+            0% {
+              color: #000;
+            }
+            16.67% {
+              color: green;
+            }
+            33.33% {
+              color: green;
+            }
+            50% {
+              color: #000;
+            }
+            100% {
+              color: #000;
+            }
+          }
+
+          .nav-list:nth-child(1) {
+            left: 0%;
+            -webkit-animation: move-left 18s infinite linear,
+                               show-display  18s infinite linear;
+          }
+          .nav-list:nth-child(2) {
+            left: 33.33%;
+            color: green;
+            -webkit-animation: move-left 18s infinite linear,
+                               show-display  18s linear -3s infinite normal;
+          }
+          .nav-list:nth-child(3) {
+            left: 66.66%;
+            -webkit-animation: move-left 18s infinite linear,
+                               show-display  18s linear 0s infinite normal;
+          }
+          .nav-list:nth-child(4) {
+            left: 100%;
+            -webkit-animation: move-left 18s infinite linear,
+                               show-display  18s linear 6s infinite normal;
+          }
+          .nav-list:nth-child(5) {
+            left: 133.33%;
+            -webkit-animation: move-left 18s infinite linear,
+                               show-display  18s linear 12s infinite normal;
+          }
+          .nav-list:nth-child(6) {
+            left: 166.66%;
+            -webkit-animation: move-left 18s infinite linear,
+                               show-display  18s linear 18s infinite normal;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="nav">
+          <div class="nav-list">
+              <p class="img"><img src="http://wuliao.im/www/img/cartoon.png"/></p>
+              <p class="web-font title">1 漫画</p>
+              <p class="web-font desc">一种吃了会笑的药</p>
+          </div>
+          <div class="nav-list">
+              <p class="img"><img src="http://wuliao.im/www/img/game.png"/></p>
+              <p class="web-font title">2 游戏</p>
+              <p class="web-font desc">无止境中填满时间</p>
+          </div>
+          <div class="nav-list">
+              <p class="img"><img src="http://wuliao.im/www/img/music.png"/></p>
+              <p class="web-font title">3 音乐</p>
+              <p class="web-font desc">何妨与你一起追</p>
+          </div>
+          <div class="nav-list">
+              <p class="img"><img src="http://wuliao.im/www/img/cartoon.png"/></p>
+              <p class="web-font title">4 漫画</p>
+              <p class="web-font desc">一种吃了会笑的药</p>
+          </div>
+          <div class="nav-list">
+              <p class="img"><img src="http://wuliao.im/www/img/game.png"/></p>
+              <p class="web-font title">5 游戏</p>
+              <p class="web-font desc">无止境中填满时间</p>
+          </div>
+          <div class="nav-list">
+              <p class="img"><img src="http://wuliao.im/www/img/music.png"/></p>
+              <p class="web-font title">6 音乐</p>
+              <p class="web-font desc">何妨与你一起追</p>
+          </div>
+      </div>
+
+    </body>
+</html>
