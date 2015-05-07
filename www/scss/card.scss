@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    height: 100%; 
+    overflow: hidden;
+}
+body {
+    font-size: 62.5%;
+}
+
+.container {
+    height:  100%;
+}
+.elastic-card-list {
+    //margin: 1.4rem;
+    position: relative;
+    -webkit-perspective: 1000px;
+    -webkit-perspective-origin: 120% 110%;
+    perspective: 1000px;
+    perspective-origin: 120% 110%;
+    height: 100%;
+    padding-top: 2rem;
+
+    .elastic-card {
+        position: absolute;
+        background: #fff;
+        height: 80%;
+        left: 5%;
+        width: 90%;
+        border: 1px solid #ccc;
+        padding: 0.8rem;
+        box-sizing: border-box;
+        opacity: 0;
+        overflow-y: scroll;
+        box-shadow: 0 10px 7px -7px rgba(0,0,0,0.12), 0 0 4px rgba(0,0,0,0.1);
+
+        img {
+            width: 100%;
+        }
+        &.animate {
+            -webkit-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+    }
+}

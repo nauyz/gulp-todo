@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>无聊</title>
+        <meta name="apple-mobile-web-app-title" content="无聊"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+
+          
+        <meta name="apple-mobile-web-app-capable" content="yes" /> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="keywords" content="无聊,杀时间,搞笑,美文"/>
+        <meta name="description" content="每天，一个人至少有三个小时处在无聊的状态中。你，无聊吗？在这里，音乐、美文、电台、漫画、虐心游戏、搞笑视频等随机出现，简单分享只为让无聊更有料！" />
+        <link rel="stylesheet" type="text/css" href="css/card.css">
+        <script type="text/javascript" src="lib/hammer/hammer.js"></script>
+        <script type="text/javascript" src="js/card.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="card" class="elastic-card-list">
+                <div class="elastic-card animate">
+                    <h4>人物</h4>
+                    <div class="content">
+                        <img src="img/1.jpg"/>
+                    </div>
+                </div>
+                <div class="elastic-card animate">
+                    <h4>小路</h4>
+                    <div class="content">
+                        <img src="img/2.jpg"/>
+                        <img src="img/5.jpg"/>
+                        <img src="img/2.jpg"/>
+                    </div>
+                </div>
+                <div class="elastic-card animate">
+                    <h4>房屋</h4>
+                    <div class="content">
+                        <img src="img/3.jpg"/>
+                    </div>
+                </div>
+                <div class="elastic-card animate">
+                    <h4>油画系列</h4>
+                    <div class="content">
+                        <img src="img/4.jpg"/>
+                        <!--<img src="img/5.jpg"/>-->
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+                <div class="option"></div>
+                <div class="option"></div>
+                <div class="option"><p>换</p></div>
+                <div class="option"></div>
+                <div class="option"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            new ElasticCard( document.getElementById( 'card' ) );
+            // var cardElem = document.getElementById('card');
+            // var card = new Hammer(cardElem);
+
+            // card.on("panleft panright tap press", function (ev) {
+            //     var tval = 'translate(10px, 30px)';
+
+            //     console.log(card);
+            //     cardElem.style.WebkitTransform = tval;
+            //     cardElem.style.msTransform = tval;
+            //     cardElem.style.transform = tval;
+            // });
+        </script>
+    </body>
+</html>
